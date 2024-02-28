@@ -1,0 +1,120 @@
+body{
+    background-color: #212121;
+    color: white;
+}
+.card{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    /* height: 100vh; */
+}
+   .input {    
+    font-family: cursive;
+    font-weight: 500;
+    font-size: medium;
+    color: #fff;
+    background-color: rgb(28,28,30);
+    box-shadow: 0 0 0.4vw rgba(0,0,0,0.5), 0 0 0 0.15vw transparent;
+    border-radius: 0.4vw;
+    border: none;
+    outline: none;
+    padding: 0.4vw;
+    transition: .4s;
+    width: 234px;
+    height: 31px;
+    margin-right: 73px;                             
+  }
+  
+  .input:hover {
+    box-shadow: 0 0 0 .15vw rgba(135, 207, 235, 0.186);
+  }
+  
+  .input:focus {
+    box-shadow: 0 0 0 .15vw skyblue;
+  }
+  .button {
+    position: relative;
+    border: none;
+    background-color: white;
+    color: #212121;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+    gap: 10px;
+    border-radius: 10px;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    overflow: hidden;
+    left: 259px;
+    top: -44px;
+    height: 47px;
+    width: 20%;
+  }
+  
+  .button span {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    background-color: palevioletred;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    bottom: 0%;
+    transform: translate(-100%, 100%);
+    border-radius: inherit;
+  }
+  
+  .button svg {
+    fill: palevioletred;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .button:hover::before {
+    animation: shakeBack 0.6s forwards;
+  }
+  
+  .button:hover svg {
+    fill: white;
+    scale: 1.3;
+  }
+  
+  .button:active {
+    box-shadow: none;
+  }
+  
+  @keyframes shakeBack {
+    0% {
+      transform: translate(-100%, 100%);
+    }
+  
+    50% {
+      transform: translate(20%, -20%);
+    }
+  
+    100% {
+      transform: translate(0%, 0%);
+    }
+  }
+  
+
+  img{
+    width: 50%;
+  }
+  h2{
+    font-size: xx-large;
+    font-weight: 800;
+    font-family: cursive;
+    color: #1ca7e0;
+  }
